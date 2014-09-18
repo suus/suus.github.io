@@ -10,3 +10,7 @@ github_username:  suus
 
 # Build settings
 markdown: kramdown
+
+exclude: ['vendor',
+          'Gemfile',
+          'Gemfile.lock']
