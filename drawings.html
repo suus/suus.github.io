@@ -1,0 +1,16 @@
+---
+layout: default
+title: Drawings
+---
+
+{% for drawing in site.drawings %}
+  <li>
+    <h2>
+      <a href="{{ drawing.url | prepend: site.baseurl }}">{{ drawing.title }}</a>
+    </h2>
+    <img width="695" height="482" src="{{ site.baseurl }}/drawings/{{ drawing.image }}" />
+    <p>
+      {{ drawing.content }}
+    </p>
+  </li>
+{% endfor %}
